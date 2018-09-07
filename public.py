@@ -22,25 +22,25 @@ class LoginTest(unittest.TestCase):
     #登录-用户名、密码正确登录
     def test_login1(self):
         '''用户名,密码正确登录'''
-        self.user_login(self.driver,"18616655260","mm112233")
+        self.user_login(self.driver,"186xxx","xxx")
         time.sleep(2)
         self.driver.quit()
     #用户名正确、密码为空登录
     def test_login2(self):
         '''用户名正确,密码为空登录'''
-        self.user_login(self.driver,"18616655260","")
+        self.user_login(self.driver,"186xxx","")
         time.sleep(2)
         self.driver.quit()
     #用户名正确，密码错误登录
     def test_login3(self):
         '''用户名正确,密码错误登录'''
-        self.user_login(self.driver,"18616655260","22")
+        self.user_login(self.driver,"186xxx","22")
         time.sleep(2)
         self.driver.quit()
     #用户名错误，密码正确登录
     def test_login4(self):
         '''用户名错误,密码正确登录'''
-        self.user_login(self.driver,"18616655261","mm112233")
+        self.user_login(self.driver,"18xxx","xxx")
         time.sleep(2)
         self.driver.quit()
      #用户名为空，密码为空登录
